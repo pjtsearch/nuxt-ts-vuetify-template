@@ -6,6 +6,7 @@
       fixed
       app
       :temporary="temporary"
+      :stateless="true"
     >
       <v-list>
         <v-list-tile

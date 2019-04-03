@@ -1,6 +1,6 @@
 import NuxtConfiguration from '@nuxt/config';
-const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
-const pkg = require('./package')
+import VuetifyLoaderPlugin from "vuetify-loader/lib/plugin"
+var pkg = require("./package");
 
 const config: NuxtConfiguration = {
   mode: 'universal',
@@ -83,5 +83,4 @@ const config: NuxtConfiguration = {
   }
 }
 
-// export default config
-module.exports = config
+export default config
