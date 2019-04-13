@@ -2,11 +2,8 @@
   <v-app :dark="storeItems.dark">
     <v-navigation-drawer
       v-model="drawer"
-      :clipped="clipped"
       fixed
       app
-      :temporary="temporary"
-      :stateless="true"
     >
       <v-list>
         <v-list-tile
