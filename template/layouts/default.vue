@@ -1,5 +1,5 @@
 <template>
-  <v-app :dark="storeItems.dark">
+  <v-app :dark="$store.state.settings.dark">
     <v-navigation-drawer
       v-model="drawer"
       fixed
@@ -40,7 +40,6 @@
 </template>
 
 <script lang="ts">
-import Store from "@/assets/ts/Store.class";
 import { Component, Vue, Watch } from 'vue-property-decorator'
 
 interface PagePath {
@@ -54,7 +53,6 @@ interface PagePath {
   }
 })
 export default class Home extends Vue {
-  storeItems:any = {};
   clipped:boolean = false
   drawer:boolean = false
   fixed:boolean = false
@@ -73,9 +71,9 @@ export default class Home extends Vue {
   ];
   title:string = 'Vuetify.js'
   created():void{
-    this.storeItems = Store.items
-    Store.watchItems(()=>this.storeItems = Store.items)
-    this.storeItems.dark = true;
+  }
+  toggleDark(): void {
+    this.$store.commit("settings/toggle", { item: "dark" });
   }
   @Watch("$mq")
   sizeChange(newValue, oldValue){

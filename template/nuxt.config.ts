@@ -24,6 +24,7 @@ const config: NuxtConfiguration = {
       }
     ]
   },
+  
 
   /*
   ** Customize the progress-bar color
@@ -41,6 +42,12 @@ const config: NuxtConfiguration = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    [
+      "nuxt-vuex-localstorage",
+      {
+        localStorage: ["settings"]
+      }
+    ],
     [
       'nuxt-mq',
       {

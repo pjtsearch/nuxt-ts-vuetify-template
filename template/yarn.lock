@@ -926,6 +926,11 @@
   dependencies:
     core-js "^2.5.7"
 
+"@mdi/font@*":
+  version "3.6.95"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-3.6.95.tgz#0bbde766ca2d94cfa0e469f25523b23d3112bdd3"
+  integrity sha512-wUbkF/RRCIh51TPzAL9qUeRSUFla9I3x1nGq62HkfWzIebRHbDY5HPaYCQuZO7398dWaLHTu4BwnBA58YbhfEA==
+
 "@nuxt/babel-preset-app@2.5.1":
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/@nuxt/babel-preset-app/-/babel-preset-app-2.5.1.tgz#11512252c93c4b1268a24134e841096f7743e80c"
@@ -6006,6 +6011,13 @@ nuxt-mq@^1.1.3:
   integrity sha512-rXYFAXVi8NDh6Pc82QQnbk0WDnZuSreRIdQjttsnQVwjcN9dPjPTWDhUDaukd/wHQkXupGCuTqNSPylXa6ovbg==
   dependencies:
     vue-mq latest
+
+nuxt-vuex-localstorage@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/nuxt-vuex-localstorage/-/nuxt-vuex-localstorage-1.2.6.tgz#14f63fba583233bd20fa22d88d134cb7d5fc17eb"
+  integrity sha512-TLH9I/HlzCl5k58XYKBZnekOKgczd9IkKDnA/T+JigGW8a4YXSHQwQBPyouzhIv22iv87WgDRzzEVXOktcxDjg==
+  dependencies:
+    axios "^0.18.0"
 
 nuxt@latest:
   version "2.5.1"
